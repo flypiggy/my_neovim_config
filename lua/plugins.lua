@@ -33,18 +33,20 @@ end
 
 packer.startup(
   function(use)
-   use('wbthomason/packer.nvim')
+   use 'wbthomason/packer.nvim'
    --------------------- colorschemes --------------------
-   use('tanvirtin/monokai.nvim')
+   use 'tanvirtin/monokai.nvim' 
    -------------------------------------------------------
-   use({ "kyazdani42/nvim-tree.lua", requires = "kyazdani42/nvim-web-devicons" })
-   use({ "akinsho/bufferline.nvim", requires = { "kyazdani42/nvim-web-devicons", "moll/vim-bbye" }})
-   use({ "nvim-lualine/lualine.nvim", requires = { "kyazdani42/nvim-web-devicons" } })
-   use("arkav/lualine-lsp-progress")
-   use { 'nvim-telescope/telescope.nvim', requires = { "nvim-lua/plenary.nvim" } }
-   use("glepnir/dashboard-nvim")
-   use("ahmedkhalf/project.nvim")
-   use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
+   use { 'kyazdani42/nvim-tree.lua', requires = 'kyazdani42/nvim-web-devicons' }
+   use { 'nvim-telescope/telescope.nvim', requires = { 'nvim-lua/plenary.nvim' } }
+   use { 'akinsho/bufferline.nvim', requires = { 'kyazdani42/nvim-web-devicons', 'moll/vim-bbye' }}
+   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+   use { 'nvim-lualine/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons' } }
+   use 'arkav/lualine-lsp-progress'
+   use 'glepnir/dashboard-nvim'
+   use 'ahmedkhalf/project.nvim'
+   use 'ur4ltz/surround.nvim'
+   use 'numToStr/Comment.nvim'
 
 
    config = {
